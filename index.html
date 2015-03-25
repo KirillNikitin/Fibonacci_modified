@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+    <script type="text/javascript" src="js/stuff.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="description">
+        <div class="info">
+            Definition: Modified Fibonacci Number (MFN) - MFN(0) = 0, MFN(1) = 1, MFN(n) = MFN(n - 2) + MFN(n - 1) / n
+<br />
+            Try to enter any number in a form below and click "Count up".<br />
+            Example values (For testing purposes):<br />
+            MFN(0) = 0<br />
+            MFN(1) = 1<br />
+            MFN(2) = 0.5<br />
+            MFN(3) = 1.1666666666666667<br />
+            MFN(4) = 0.7916666666666667<br />
+            ...<br />
+            MFN(10) = 1.3564608134920637
+            </div>
+        <div class="info-test"><input type="number" min="0" class="number-input" id="numberTestInput" /><input type="button" class="count-test" id="testCount" value="Count up"/>
+            <div id="result" class="result"></div>
+        </div>
+        <div class="info">
+            If you click "fill LowNumbersList" then you'll see the list of numbers with 50 following Modified Fibonacci Numbers starting from 10000000th element.
+<br />
+            And if you click "fill HighNumbersList" then you'll see the list of numbers with 50 following Modified Fibonacci Numbers starting from 20000000th element
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="upperblock">
+            <div class="number-button-outer">
+                <input type="button" value="fill LowNumbersList" id="LowNumbersButton" class="number-buttons" />
+                <div class="inform"><div class="triangle-bottom"></div>Click to view the list of low numbers</div>
+            </div>
+            <div class="number-button-outer">
+                <input type="button" value="fill HighNumbersList" id="HighNumbersButton" class="number-buttons" />
+                <div class="inform"><div class="triangle-bottom"></div>Click to view the list of high numbers</div>
+            </div>
+        </div>
+        <div class="lowerblock">
+            <div class="number-lists-outer">
+                <ul id="LowNumbersList" class="number-lists" title="Low numbers list"></ul>
+            </div>
+            <div class="number-lists-outer">
+                <ul id="HighNumbersList" class="number-lists" title="High numbers list"></ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
